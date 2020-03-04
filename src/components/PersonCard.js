@@ -6,7 +6,6 @@ class PersonCard extends Component {
         this.state = {
             clickCount: this.props.age
         }
-
     }
 
     handleClick = () => {
@@ -14,7 +13,6 @@ class PersonCard extends Component {
             clickCount: this.state.clickCount + 1
         })
     }
-
 
     render = () => {
         return (
@@ -25,9 +23,7 @@ class PersonCard extends Component {
                 <button onClick={this.handleClick}>Birthday Button for {this.props.first_name} {this.props.last_name}</button>
             </div >
         );
-
     }
-
 };
 
 
